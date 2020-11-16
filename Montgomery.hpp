@@ -95,6 +95,5 @@ ulong MonExp(ulong x1, ulong x2, ulong m) {
         base = reduce(mont, base * base);
         
     }
-    std::this_thread::sleep_for(std::chrono::milliseconds(5));
     return reduce(mont, prod);
 }
